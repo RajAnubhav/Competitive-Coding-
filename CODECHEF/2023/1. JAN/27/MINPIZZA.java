@@ -7,10 +7,10 @@ public class MINPIZZA {
             int n, x;
             n = sc.nextInt();
             x = sc.nextInt();
-            if(n%4==0)
-                System.out.println(n*x/4);
+            if((n*x)%4 !=0)
+                System.out.println((n*x)/4 + 1);
             else
-                System.out.println(((n*x)/4)+1);
+                System.out.println((n*x)/4);
         }
         sc.close();
     }
